@@ -1,2 +1,2 @@
-Warsaw Public Transaport Monitor
-================================
+Public Transport Monitor
+========================
