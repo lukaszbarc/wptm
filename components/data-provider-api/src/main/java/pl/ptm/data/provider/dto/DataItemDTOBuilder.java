@@ -4,7 +4,6 @@ import java.util.Date;
 
 
 public class DataItemDTOBuilder {
-    private long identity;
     private double lat;
     private double lon;
     private int line;
@@ -20,10 +19,6 @@ public class DataItemDTOBuilder {
         return new DataItemDTOBuilder();
     }
 
-    public DataItemDTOBuilder withIdentity(long identity) {
-        this.identity = identity;
-        return this;
-    }
 
     public DataItemDTOBuilder withLat(double lat) {
         this.lat = lat;
@@ -40,7 +35,7 @@ public class DataItemDTOBuilder {
         return this;
     }
 
-    public DataItemDTOBuilder withFirstLine(int line) {
+    public DataItemDTOBuilder withFirstLine(int firstLine) {
         this.firstLine = firstLine;
         return this;
     }
@@ -62,7 +57,6 @@ public class DataItemDTOBuilder {
 
     public DataItemDTOBuilder but() {
         return aDataItemDTO()
-                .withIdentity(identity)
                 .withLat(lat)
                 .withLon(lon)
                 .withLine(line)
@@ -74,7 +68,6 @@ public class DataItemDTOBuilder {
 
     public DataItemDTO build() {
         DataItemDTO dataItemDTO = new DataItemDTO();
-        dataItemDTO.setIdentity(identity);
         dataItemDTO.setLat(lat);
         dataItemDTO.setLon(lon);
         dataItemDTO.setLine(line);

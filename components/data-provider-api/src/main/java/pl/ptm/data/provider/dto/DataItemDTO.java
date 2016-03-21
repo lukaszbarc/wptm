@@ -7,7 +7,6 @@ import java.util.Date;
 @Data
 public class DataItemDTO {
 
-    private long identity;
     private double lat;
     private double lon;
     private int line;

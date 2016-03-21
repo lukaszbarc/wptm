@@ -18,6 +18,8 @@
 
     <modules>
         <module>client-api</module>
+        <module>data-model</module>
+        <module>data-dao-jpa</module>
         <module>data-provider-api</module>
         <module>data-provider-warsaw-trams</module>
     </modules>
