@@ -7,8 +7,8 @@
     <artifactId>main</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Transport Monitor</name>
-    <description>Transport Monitor - main pom project</description>
+    <name>Public Transport Monitor</name>
+    <description>Public Transport Monitor - main pom project</description>
 
     <packaging>pom</packaging>
 
