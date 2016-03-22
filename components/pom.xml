@@ -25,6 +25,7 @@
         <module>data-dao-jpa</module>
         <module>data-provider-api</module>
         <module>data-provider-warsaw-trams</module>
+        <module>data-provider-stops</module>
     </modules>
 
 </project>
