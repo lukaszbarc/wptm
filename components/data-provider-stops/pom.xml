@@ -11,5 +11,8 @@
 
     <artifactId>data-provider-stops</artifactId>
 
+    <description>
+        Data provider for https://api.um.warszawa.pl/
+    </description>
 
 </project>
