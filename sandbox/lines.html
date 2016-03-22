@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Complex icons</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    var markers = [];
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 52.2727509, lng: 20.9719448}
+        });
+
+        var setMapOnAll = function(map) {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(map);
+            }
+        }
+
+        var clearMarkers = function clearMarkers() {
+            setMapOnAll(null);
+        }
+
+        var showMarkers = function() {
+            setMapOnAll(map);
+        }
+
+        var deleteMarkers = function() {
+            clearMarkers();
+            markers = [];
+        }
+
+        var setMarkers = function(map) {
+            // Adds markers to the map.
+            $.getJSON("http://localhost:8080/lines")
+                    .done(function (data) {
+                        deleteMarkers();
+                        for (var i = 0; i < data.length; i++) {
+                            var point = data[i];
+                            var marker = new google.maps.Marker({
+                                position: {lat: point.lat, lng: point.lng},
+                                map: map,
+                                label: point.line.toString(),
+                                title: point.line.toString()
+                            });
+                            markers.push(marker);
+                            showMarkers();
+                        }
+                    });
+
+        }
+        setInterval(setMarkers, 10000);
+        setMarkers(map);
+    }
+
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhlgHb4cNXu8cToeXdwref077N1lrr6_0&callback=initMap">
+</script>
+</body>
+</html>

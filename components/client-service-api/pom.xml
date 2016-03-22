@@ -9,18 +9,18 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>client-api</artifactId>
+    <artifactId>client-service-api</artifactId>
 
-    <name>Public Transport Monitor - client api</name>
-    <description>Public Transport Monitor - client api</description>
+    <name>Public Transport Monitor - client service api</name>
+    <description>Public Transport Monitor - client service api</description>
 
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
+            <groupId>pl.ptm</groupId>
+            <artifactId>client-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

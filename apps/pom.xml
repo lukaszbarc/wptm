@@ -9,22 +9,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>components</artifactId>
+    <artifactId>apps</artifactId>
 
-    <name>Public Transport Monitor - components</name>
-    <description>Public Transport Monitor - components</description>
+    <name>Public Transport Monitor - apps</name>
+    <description>Public Transport Monitor - apps</description>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>client-api</module>
-        <module>client-resource</module>
-        <module>client-service-api</module>
-        <module>client-service-impl</module>
-        <module>data-model</module>
-        <module>data-dao-jpa</module>
-        <module>data-provider-api</module>
-        <module>data-provider-warsaw-trams</module>
+        <module>data-store-app</module>
     </modules>
 
 </project>

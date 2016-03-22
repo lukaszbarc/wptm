@@ -2,12 +2,11 @@ package pl.ptm.data.model;
 
 import lombok.Data;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
+@Entity
 public class DataItemEntity {
 
 
@@ -30,6 +29,6 @@ public class DataItemEntity {
     private Date date;
 
     @ManyToOne
-    private DataSnapshotEntity dataSnapshotEntity;
+    private DataSnapshotEntity dataSnapshot;
 
 }
