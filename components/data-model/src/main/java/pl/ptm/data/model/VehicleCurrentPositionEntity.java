@@ -1,7 +1,6 @@
 package pl.ptm.data.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
 import java.util.Date;

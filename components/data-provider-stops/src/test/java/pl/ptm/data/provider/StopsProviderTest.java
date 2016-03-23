@@ -8,7 +8,7 @@ import org.junit.Test;
 public class StopsProviderTest {
 
     @Test
-    public void fetchDataTest(){
+    public void fetchDataTest() {
 
     }
 

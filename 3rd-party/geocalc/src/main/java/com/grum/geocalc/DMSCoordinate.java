@@ -50,7 +50,7 @@ public class DMSCoordinate extends Coordinate {
         this.seconds = seconds;
         this.decimalDegrees = abs(this.wholeDegrees) + minutes / 60 + seconds / 3600;
 
-        if(wholeDegrees < 0) {
+        if (wholeDegrees < 0) {
             this.decimalDegrees = -this.decimalDegrees;
         }
     }

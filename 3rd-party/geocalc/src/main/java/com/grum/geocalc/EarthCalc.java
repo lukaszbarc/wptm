@@ -154,7 +154,6 @@ public class EarthCalc {
      * @param standPoint The stand point
      * @param forePoint  The fore point
      * @return (azimuth) bearing in degrees to the North
-     *
      * @link http://www.movable-type.co.uk/scripts/latlong.html
      */
     public static double getVincentyBearing(Point standPoint, Point forePoint) {
@@ -167,7 +166,6 @@ public class EarthCalc {
      * @param standPoint The stand point
      * @param forePoint  The fore point
      * @return (azimuth) bearing in degrees to the North
-     *
      * @link http://www.movable-type.co.uk/scripts/latlong.html
      */
     public static double getVincentyFinalBearing(Point standPoint, Point forePoint) {
@@ -184,7 +182,6 @@ public class EarthCalc {
      * @param bearing    Direction in degrees
      * @param distance   distance in meters
      * @return forePoint coordinates
-     *
      * @link http://www.movable-type.co.uk/scripts/latlong.html
      */
     public static Point pointRadialDistance(Point standPoint, double bearing, double distance) {
@@ -231,7 +228,6 @@ public class EarthCalc {
      * @param standPoint The centre of the area
      * @param distance   Distance around standPoint, im meters
      * @return The area
-     * 
      * @link http://www.movable-type.co.uk/scripts/latlong.html
      */
     public static BoundingArea getBoundingArea(Point standPoint, double distance) {

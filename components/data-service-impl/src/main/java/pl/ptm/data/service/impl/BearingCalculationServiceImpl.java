@@ -11,6 +11,7 @@ import pl.ptm.data.service.BearingCalculationService;
 public class BearingCalculationServiceImpl implements BearingCalculationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BearingCalculationServiceImpl.class);
+
     @Override
     public double calculateBearing(double lastLon, double lastLat, double currentLon, double currentLat) {
         Coordinate lastPosLon = new DegreeCoordinate(lastLon);
