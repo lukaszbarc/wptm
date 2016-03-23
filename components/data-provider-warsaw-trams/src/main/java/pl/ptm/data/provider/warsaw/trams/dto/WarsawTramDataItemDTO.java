@@ -14,6 +14,9 @@ public class WarsawTramDataItemDTO {
     @JsonProperty("FirstLine")
     private String firstLine;
 
+    @JsonProperty("Lines")
+    private String lines;
+
     @JsonProperty("Lat")
     private double lat;
 

@@ -1,0 +1,2704 @@
+{
+  "result": [
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 21.0536842,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2555275,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 21.0334492,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2561111,
+      "LowFloor": false,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9081612,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2388306,
+      "LowFloor": false,
+      "Brigade": "14  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "13 ",
+      "Lon": 21.0597591,
+      "Lines": "13             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2581177,
+      "LowFloor": false,
+      "Brigade": "010 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 20.9965382,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1798058,
+      "LowFloor": false,
+      "Brigade": "017 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 21.0240688,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.198616,
+      "LowFloor": false,
+      "Brigade": "013 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.007637,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2601547,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.0024948,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:21",
+      "Lat": 52.1797409,
+      "LowFloor": false,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.0176144,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1890564,
+      "LowFloor": false,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "13 ",
+      "Lon": 21.0295353,
+      "Lines": "13             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2525215,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 21.0115948,
+      "Lines": "6,31           ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2302856,
+      "LowFloor": false,
+      "Brigade": "78  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "14 ",
+      "Lon": 20.9803619,
+      "Lines": "14,15          ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2751579,
+      "LowFloor": false,
+      "Brigade": "52  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 20.9444427,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2468987,
+      "LowFloor": false,
+      "Brigade": "012 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.1188507,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2381783,
+      "LowFloor": false,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 20.9815807,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2098579,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9814434,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.236866,
+      "LowFloor": false,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9807644,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2522392,
+      "LowFloor": false,
+      "Brigade": "17  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "14 ",
+      "Lon": 21.0208797,
+      "Lines": "14,15          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2103653,
+      "LowFloor": false,
+      "Brigade": "53  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9139061,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2371826,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.90098,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2386856,
+      "LowFloor": false,
+      "Brigade": "014 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9566059,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1884117,
+      "LowFloor": false,
+      "Brigade": "021 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 21.0848961,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2446938,
+      "LowFloor": false,
+      "Brigade": "013 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0510826,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2389679,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.1192856,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2381973,
+      "LowFloor": false,
+      "Brigade": "017 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.9379768,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2750549,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 20.9267426,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2472153,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0509186,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2380409,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 20.9735546,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2351456,
+      "LowFloor": false,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "27 ",
+      "Lon": 20.9312897,
+      "Lines": "27             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.224781,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 21.0141926,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2744026,
+      "LowFloor": false,
+      "Brigade": "011 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 20.8997841,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2634201,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 20.9734783,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2351456,
+      "LowFloor": false,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0218029,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2985153,
+      "LowFloor": false,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 21.0036621,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2454605,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 20.9897594,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2250328,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9848938,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2389908,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9009457,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2386894,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 21.0161037,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2228394,
+      "LowFloor": false,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0243607,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2974854,
+      "LowFloor": false,
+      "Brigade": "019 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.0115509,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2200356,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.011961,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2295341,
+      "LowFloor": false,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "14 ",
+      "Lon": 21.0245457,
+      "Lines": "14             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.185894,
+      "LowFloor": false,
+      "Brigade": "09  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9804649,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2751732,
+      "LowFloor": false,
+      "Brigade": "012 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 21.0019054,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1960869,
+      "LowFloor": false,
+      "Brigade": "09  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9648666,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.1978073,
+      "LowFloor": false,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9636326,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.1963577,
+      "LowFloor": false,
+      "Brigade": "014 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.0237141,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2010193,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0084877,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2356796,
+      "LowFloor": false,
+      "Brigade": "014 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9848156,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2299309,
+      "LowFloor": false,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0273247,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2811813,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 21.0020638,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2904663,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 21.0021687,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2903023,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9768562,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2114067,
+      "LowFloor": false,
+      "Brigade": "14  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0265694,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2810097,
+      "LowFloor": false,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0352688,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2542992,
+      "LowFloor": false,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "14 ",
+      "Lon": 20.982151,
+      "Lines": "14,15          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2099724,
+      "LowFloor": false,
+      "Brigade": "51  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 21.0288811,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2564583,
+      "LowFloor": false,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.0164452,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.1681786,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0915661,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2448158,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 21.0499344,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2527924,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 21.0332603,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.256813,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 20.9298592,
+      "Lines": "6              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2930565,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 20.9776402,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:17",
+      "Lat": 52.2401047,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.948328,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2470818,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0339146,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2345161,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.0201302,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2316284,
+      "LowFloor": true,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.1203003,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2379456,
+      "LowFloor": true,
+      "Brigade": "011 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.944025,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.1763,
+      "LowFloor": true,
+      "Brigade": "36  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 20.9477673,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2710953,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0849628,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2445335,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 20.9674091,
+      "Lines": "6              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2734947,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.0851307,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2444725,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9879303,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2240067,
+      "LowFloor": true,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.1189785,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2385941,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0188484,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.1708908,
+      "LowFloor": true,
+      "Brigade": "030 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.0215969,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.178009,
+      "LowFloor": true,
+      "Brigade": "039 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.021347,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2136536,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.015955,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1681786,
+      "LowFloor": true,
+      "Brigade": "017 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9393501,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2261848,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0015316,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2909355,
+      "LowFloor": true,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9802914,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.275547,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.000349,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.20187,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0187931,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1705475,
+      "LowFloor": true,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 20.9854755,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2212715,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9388752,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2749748,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0217075,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2987595,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0382214,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2637444,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9252987,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2615509,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0238247,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2001686,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0209179,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:14:44",
+      "Lat": 52.248848,
+      "LowFloor": true,
+      "Brigade": "017 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 21.001955,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:24",
+      "Lat": 52.1898422,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 21.0343018,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2545013,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9005451,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2387352,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0219326,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2983627,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 20.9471951,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.1792374,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 21.0049114,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2202797,
+      "LowFloor": true,
+      "Brigade": "17  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9726315,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2721519,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9459419,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2714539,
+      "LowFloor": true,
+      "Brigade": "034 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9673843,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2437706,
+      "LowFloor": true,
+      "Brigade": "038 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.118885,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2382622,
+      "LowFloor": true,
+      "Brigade": "027 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 20.9756718,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2099342,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9502468,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1820145,
+      "LowFloor": true,
+      "Brigade": "37  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9900494,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2252502,
+      "LowFloor": true,
+      "Brigade": "40  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.0159969,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1680069,
+      "LowFloor": true,
+      "Brigade": "14  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 21.0784798,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2456436,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 21.0024796,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.1810226,
+      "LowFloor": true,
+      "Brigade": "044 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9926281,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2429962,
+      "LowFloor": true,
+      "Brigade": "19  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.029871,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2893219,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9313049,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:01",
+      "Lat": 52.2942467,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9426861,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.3242531,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 20.9376907,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2748985,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 21.0477753,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2477112,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0576038,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:21",
+      "Lat": 52.2469711,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.045578,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2485161,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9299545,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:23",
+      "Lat": 52.2922935,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 21.0043449,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2237396,
+      "LowFloor": true,
+      "Brigade": "31  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9450531,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2718048,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 20.9788322,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2364883,
+      "LowFloor": true,
+      "Brigade": "22  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9258862,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:20",
+      "Lat": 52.2872047,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.997448,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2431755,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 21.0039787,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2068825,
+      "LowFloor": true,
+      "Brigade": "16  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9295788,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2912979,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9932156,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1803169,
+      "LowFloor": true,
+      "Brigade": "39  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9370632,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.3003082,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0188217,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2182465,
+      "LowFloor": true,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0866375,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2452316,
+      "LowFloor": true,
+      "Brigade": "24  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.9659595,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2444115,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9884892,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2477798,
+      "LowFloor": true,
+      "Brigade": "041 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9718685,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2728043,
+      "LowFloor": true,
+      "Brigade": "34  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9821835,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2555428,
+      "LowFloor": true,
+      "Brigade": "35  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0194359,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2634621,
+      "LowFloor": true,
+      "Brigade": "19  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.943737,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2711411,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0077324,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2289925,
+      "LowFloor": true,
+      "Brigade": "39  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9933109,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2259521,
+      "LowFloor": true,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 20.9820461,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2098312,
+      "LowFloor": true,
+      "Brigade": "013 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "20 ",
+      "Lon": 20.9796467,
+      "Lines": "20             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2367592,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.003891,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.1887856,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.024334,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.1929016,
+      "LowFloor": true,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 21.0048141,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.222538,
+      "LowFloor": true,
+      "Brigade": "13  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0365734,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2695847,
+      "LowFloor": true,
+      "Brigade": "13  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9248829,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2811165,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.0234489,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:12:36",
+      "Lat": 52.2021942,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9887657,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.1819267,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0302753,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2752533,
+      "LowFloor": true,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9295139,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2918777,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0211678,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2134247,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9816074,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2097588,
+      "LowFloor": true,
+      "Brigade": "13  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.984024,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2196159,
+      "LowFloor": true,
+      "Brigade": "15  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 21.021513,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2319374,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 21.0597706,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2581635,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.1188316,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2381706,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0263119,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2801552,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 20.9439373,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:15:10",
+      "Lat": 52.1760101,
+      "LowFloor": true,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 20.9885807,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2255592,
+      "LowFloor": true,
+      "Brigade": "013 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 20.9993114,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2271996,
+      "LowFloor": true,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0430565,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2494583,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 21.021101,
+      "Lines": "6              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2631798,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9437237,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1758652,
+      "LowFloor": true,
+      "Brigade": "35  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0845833,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2446022,
+      "LowFloor": true,
+      "Brigade": "31  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9211407,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:18",
+      "Lat": 52.2215767,
+      "LowFloor": true,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.97509,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2355156,
+      "LowFloor": true,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "26 ",
+      "Lon": 20.9493904,
+      "Lines": "26             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2289581,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0421581,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2361526,
+      "LowFloor": true,
+      "Brigade": "32  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0043087,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2202301,
+      "LowFloor": true,
+      "Brigade": "21  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0008106,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.1790657,
+      "LowFloor": true,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.0635681,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2406845,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9293556,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2900238,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9834461,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2188911,
+      "LowFloor": true,
+      "Brigade": "34  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0228367,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.181694,
+      "LowFloor": true,
+      "Brigade": "15  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9649181,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2662086,
+      "LowFloor": true,
+      "Brigade": "17  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 20.9975071,
+      "Lines": "6              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2555771,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0006485,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.1862831,
+      "LowFloor": true,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0174427,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.3062592,
+      "LowFloor": true,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "7  ",
+      "Lon": 21.0494823,
+      "Lines": "7              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2423477,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.0217018,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2084198,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.0098553,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:13",
+      "Lat": 52.2331123,
+      "LowFloor": true,
+      "Brigade": "16  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 20.9291935,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2645874,
+      "LowFloor": true,
+      "Brigade": "19  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9785995,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2475586,
+      "LowFloor": true,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9886036,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.224556,
+      "LowFloor": true,
+      "Brigade": "33  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.988184,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2260513,
+      "LowFloor": true,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0129642,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.3110924,
+      "LowFloor": true,
+      "Brigade": "018 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0273514,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2932053,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9503708,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.290062,
+      "LowFloor": true,
+      "Brigade": "13  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9428654,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.3244781,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9933243,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.2421684,
+      "LowFloor": true,
+      "Brigade": "18  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9674797,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.3139839,
+      "LowFloor": true,
+      "Brigade": "09  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9298344,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.292038,
+      "LowFloor": true,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 21.0536652,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2537727,
+      "LowFloor": true,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "35 ",
+      "Lon": 21.0072079,
+      "Lines": "35,24          ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2288513,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9478569,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.3208694,
+      "LowFloor": true,
+      "Brigade": "14  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.943821,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.176033,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9840908,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2307205,
+      "LowFloor": true,
+      "Brigade": "16  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 20.9668541,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:25",
+      "Lat": 52.3136826,
+      "LowFloor": true,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9972057,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2356186,
+      "LowFloor": true,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "33 ",
+      "Lon": 20.9530697,
+      "Lines": "33             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2697144,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0302887,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2528343,
+      "LowFloor": true,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "2  ",
+      "Lon": 21.0026226,
+      "Lines": "2              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2068329,
+      "LowFloor": true,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9954739,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2397346,
+      "LowFloor": true,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 21.0013676,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2285385,
+      "LowFloor": true,
+      "Brigade": "043 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 21.001997,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:15:57",
+      "Lat": 52.1887169,
+      "LowFloor": true,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "24 ",
+      "Lon": 21.0916061,
+      "Lines": "24,35          ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2447052,
+      "LowFloor": true,
+      "Brigade": "029 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.0026817,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.188797,
+      "LowFloor": false,
+      "Brigade": "07  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 21.010046,
+      "Lines": "6,31           ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.232666,
+      "LowFloor": false,
+      "Brigade": "075 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.02384,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:17",
+      "Lat": 52.1897621,
+      "LowFloor": false,
+      "Brigade": "011 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.02458,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.1861229,
+      "LowFloor": false,
+      "Brigade": "08  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 21.0217743,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1807175,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 21.0221138,
+      "Lines": "6,31           ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1897011,
+      "LowFloor": false,
+      "Brigade": "72  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9792538,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2377434,
+      "LowFloor": false,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9818611,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2098503,
+      "LowFloor": false,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9821568,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.209938,
+      "LowFloor": false,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9796677,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2146988,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 21.0209713,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.263237,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 20.9010525,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2388306,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 20.9471664,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2931938,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9965649,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2570724,
+      "LowFloor": false,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 21.005291,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:24",
+      "Lat": 52.2594452,
+      "LowFloor": false,
+      "Brigade": "01  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 21.0081577,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2360191,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.069603,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2462196,
+      "LowFloor": false,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0021858,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.188736,
+      "LowFloor": false,
+      "Brigade": "12  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 20.9747238,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2700806,
+      "LowFloor": false,
+      "Brigade": "011 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "6  ",
+      "Lon": 21.0933762,
+      "Lines": "6              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2444038,
+      "LowFloor": false,
+      "Brigade": "017 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0260429,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2328873,
+      "LowFloor": false,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 21.0329094,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2854576,
+      "LowFloor": false,
+      "Brigade": "02  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 21.0105782,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2200012,
+      "LowFloor": false,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.0070095,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2289543,
+      "LowFloor": false,
+      "Brigade": "015 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9517593,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2296944,
+      "LowFloor": false,
+      "Brigade": "13  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "27 ",
+      "Lon": 20.9722519,
+      "Lines": "27             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2726212,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "31 ",
+      "Lon": 20.9889069,
+      "Lines": "31             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.1819077,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 20.9270611,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2631569,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.052721,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2562637,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "27 ",
+      "Lon": 20.9720879,
+      "Lines": "27             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2347412,
+      "LowFloor": false,
+      "Brigade": "3   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "3  ",
+      "Lon": 21.0825577,
+      "Lines": "3              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2454987,
+      "LowFloor": false,
+      "Brigade": "012 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.9918537,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2413521,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 20.9493465,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.291153,
+      "LowFloor": false,
+      "Brigade": "04  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9364452,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.3000259,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 20.9644165,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2663765,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 21.0234146,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2644005,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.1195755,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2377396,
+      "LowFloor": false,
+      "Brigade": "018 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 21.0047817,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2229156,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.0847454,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2452278,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 20.9777241,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2627373,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "41 ",
+      "Lon": 20.9753761,
+      "Lines": "41             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2690773,
+      "LowFloor": false,
+      "Brigade": "05  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.976511,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.2111588,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9895573,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.256897,
+      "LowFloor": false,
+      "Brigade": "18  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 21.0381966,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2519951,
+      "LowFloor": false,
+      "Brigade": "4   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9939041,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2415657,
+      "LowFloor": false,
+      "Brigade": "016 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "27 ",
+      "Lon": 20.9471817,
+      "Lines": "27             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2280388,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "1  ",
+      "Lon": 20.9810543,
+      "Lines": "1              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2162971,
+      "LowFloor": false,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0165615,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.1890411,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 21.0104771,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2611618,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "28 ",
+      "Lon": 21.0540829,
+      "Lines": "28             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2540741,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9393291,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2260818,
+      "LowFloor": false,
+      "Brigade": "018 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.02952,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2899284,
+      "LowFloor": false,
+      "Brigade": "6   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "14 ",
+      "Lon": 20.9866467,
+      "Lines": "14,15          ",
+      "Time": "2016-03-23T19:16:21",
+      "Lat": 52.268837,
+      "LowFloor": false,
+      "Brigade": "55  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "27 ",
+      "Lon": 20.9792805,
+      "Lines": "27             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2367096,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "17 ",
+      "Lon": 20.9426785,
+      "Lines": "17             ",
+      "Time": "2016-03-23T19:16:29",
+      "Lat": 52.3243446,
+      "LowFloor": false,
+      "Brigade": "020 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 20.9890842,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:19",
+      "Lat": 52.2192268,
+      "LowFloor": false,
+      "Brigade": "7   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "18 ",
+      "Lon": 20.9888477,
+      "Lines": "18             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.1819611,
+      "LowFloor": false,
+      "Brigade": "9   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "10 ",
+      "Lon": 20.9154797,
+      "Lines": "10             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.228756,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.03759,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2618713,
+      "LowFloor": false,
+      "Brigade": "014 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.9200134,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:28",
+      "Lat": 52.2571945,
+      "LowFloor": false,
+      "Brigade": "013 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9952869,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2263336,
+      "LowFloor": false,
+      "Brigade": "11  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "22 ",
+      "Lon": 21.0477428,
+      "Lines": "22             ",
+      "Time": "2016-03-23T19:16:26",
+      "Lat": 52.2458954,
+      "LowFloor": false,
+      "Brigade": "8   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 20.9438171,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.1760941,
+      "LowFloor": false,
+      "Brigade": "2   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "25 ",
+      "Lon": 21.0219116,
+      "Lines": "25             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2984772,
+      "LowFloor": false,
+      "Brigade": "012 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "15 ",
+      "Lon": 21.0151138,
+      "Lines": "15             ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2242012,
+      "LowFloor": false,
+      "Brigade": "5   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "4  ",
+      "Lon": 21.0088329,
+      "Lines": "4              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2349777,
+      "LowFloor": false,
+      "Brigade": "1   "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "9  ",
+      "Lon": 21.070179,
+      "Lines": "9              ",
+      "Time": "2016-03-23T19:16:30",
+      "Lat": 52.2418327,
+      "LowFloor": false,
+      "Brigade": "10  "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "13 ",
+      "Lon": 20.9378624,
+      "Lines": "13             ",
+      "Time": "2016-03-23T19:15:02",
+      "Lat": 52.2472687,
+      "LowFloor": false,
+      "Brigade": "011 "
+    },
+    {
+      "Status": "RUNNING",
+      "FirstLine": "23 ",
+      "Lon": 20.9168644,
+      "Lines": "23             ",
+      "Time": "2016-03-23T19:16:27",
+      "Lat": 52.2506294,
+      "LowFloor": false,
+      "Brigade": "4   "
+    }
+  ]
+}

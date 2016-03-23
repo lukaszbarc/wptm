@@ -18,6 +18,7 @@
 
     <modules>
         <module>data-store-app</module>
+        <module>mock-warsaw-trams-app</module>
     </modules>
 
 </project>

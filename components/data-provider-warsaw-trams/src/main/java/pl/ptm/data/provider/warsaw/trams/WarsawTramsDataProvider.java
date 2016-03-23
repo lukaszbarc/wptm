@@ -1,5 +1,6 @@
 package pl.ptm.data.provider.warsaw.trams;
 
+import com.google.common.base.Strings;
 import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ public class WarsawTramsDataProvider implements DataProvider {
     private static final Logger LOGGER = LoggerFactory.getLogger(WarsawTramsDataProvider.class);
 
     @Setter
-    private String providerId = "warsaw-trams";
+    private String providerId;
 
     @Setter
     private RestTemplate restTemplate;
@@ -37,7 +38,7 @@ public class WarsawTramsDataProvider implements DataProvider {
         LOGGER.info("Fetch data, session time : {}", date);
 
         ResponseEntity<WarsawTramDataSnapshotDTO> forEntity = restTemplate.
-                getForEntity(warsawTramDataWsEndpoint + "&apikey=" + warsawUmApiKey, WarsawTramDataSnapshotDTO.class);
+                getForEntity(constructUrl(), WarsawTramDataSnapshotDTO.class);
 
 
         return DataSnapshotDTOBuilder.aDataSnapshotDTO()
@@ -53,6 +54,14 @@ public class WarsawTramsDataProvider implements DataProvider {
                         .withStatus(warsawTramDataItemDTO.getStatus())
                         .build()).collect(Collectors.toList()))
                 .build();
+    }
+
+    private String constructUrl() {
+        if (!Strings.isNullOrEmpty(warsawUmApiKey)) {
+            return warsawTramDataWsEndpoint + "&apikey=" + warsawUmApiKey;
+        } else {
+            return warsawTramDataWsEndpoint;
+        }
     }
 
     @Override
