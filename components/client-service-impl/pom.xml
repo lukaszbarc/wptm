@@ -17,10 +17,19 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- Starters -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
+        <!-- Utils -->
+        <dependency>
+            <groupId>com.grum</groupId>
+            <artifactId>geocalc</artifactId>
+        </dependency>
+
+        <!-- Project dependencies -->
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>data-dao-jpa</artifactId>
@@ -30,11 +39,6 @@
             <groupId>pl.ptm</groupId>
             <artifactId>client-service-api</artifactId>
             <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.grum</groupId>
-            <artifactId>geocalc</artifactId>
-            <version>0.5.1</version>
         </dependency>
     </dependencies>
 

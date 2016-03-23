@@ -17,6 +17,7 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- Project dependencies -->
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>client-api</artifactId>

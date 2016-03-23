@@ -17,10 +17,13 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- Starters -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- Project dependencies -->
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>client-api</artifactId>
@@ -31,6 +34,8 @@
             <artifactId>client-service-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
