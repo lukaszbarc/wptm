@@ -11,7 +11,7 @@ import pl.ptm.client.service.api.VehicleCurrentPositionService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/{providerId}/position/current")
+@RequestMapping(value = "/{providerId}/position/current", produces = "application/json; charset=UTF-8")
 public class VehicleCurrentPositionResource {
 
     @Autowired
