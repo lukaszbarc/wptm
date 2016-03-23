@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
         }
+
         #map {
             height: 100%;
         }
@@ -28,7 +29,7 @@
             center: {lat: 52.2727509, lng: 20.9719448}
         });
 
-        var setMapOnAll = function(map) {
+        var setMapOnAll = function (map) {
             for (var i = 0; i < markers.length; i++) {
                 markers[i].setMap(map);
             }
@@ -38,27 +39,27 @@
             setMapOnAll(null);
         }
 
-        var showMarkers = function() {
+        var showMarkers = function () {
             setMapOnAll(map);
         }
 
-        var deleteMarkers = function() {
+        var deleteMarkers = function () {
             clearMarkers();
             markers = [];
         }
 
-        var setMarkers = function(map) {
+        var setMarkers = function (map) {
             // Adds markers to the map.
-            $.getJSON("http://localhost:8080/lines")
+            $.getJSON("http://localhost:8080/warsaw-trams/position/current")
                     .done(function (data) {
                         deleteMarkers();
                         for (var i = 0; i < data.length; i++) {
-                            var point = data[i];
+                            var resp = data[i];
                             var marker = new google.maps.Marker({
-                                position: {lat: point.lat, lng: point.lng},
+                                position: {lat: resp.lat, lng: resp.lon},
                                 map: map,
-                                label: point.line.toString(),
-                                title: point.line.toString()
+                                label: resp.shortName.toString(),
+                                title: resp.fullName.toString()
                             });
                             markers.push(marker);
                             showMarkers();
