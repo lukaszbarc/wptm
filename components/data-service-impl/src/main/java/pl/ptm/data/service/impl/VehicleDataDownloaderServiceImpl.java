@@ -27,7 +27,7 @@ public class VehicleDataDownloaderServiceImpl implements VehicleDataDownloaderSe
         for (DataProvider dataProvider : dataProviders) {
             LOGGER.debug("Fetching new vehicle data from : {}", dataProvider.name());
             DataSnapshotDTO data = dataProvider.fetchData();
-            if (data.getItems().size() > 0) {
+            if (!data.getItems().isEmpty()) {
                 LOGGER.info("Fetch {} vehicle data from : {}", data.getItems().size(), dataProvider.name());
                 eventPublisher.publishEvent(data);
             } else {

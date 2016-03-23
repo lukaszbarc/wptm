@@ -9,6 +9,7 @@ import pl.ptm.data.dao.jpa.DataDaoJpa;
 import pl.ptm.data.dao.jpa.DataItemDaoJpa;
 import pl.ptm.data.model.DataItemEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -44,11 +45,11 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId, String lineName) {
-        return null;
+        return new ArrayList<>();
     }
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId) {
-        return null;
+        return new ArrayList<>();
     }
 }
