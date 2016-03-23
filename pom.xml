@@ -68,6 +68,7 @@
     </dependencyManagement>
 
     <modules>
+        <module>3rd-party</module>
         <module>apps</module>
         <module>components</module>
     </modules>

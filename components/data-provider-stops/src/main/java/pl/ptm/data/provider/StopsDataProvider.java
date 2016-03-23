@@ -12,4 +12,9 @@ public class StopsDataProvider implements DataProvider {
         return null;
     }
 
+    @Override
+    public String name() {
+        return "warsaw-trams-stops";
+    }
+
 }

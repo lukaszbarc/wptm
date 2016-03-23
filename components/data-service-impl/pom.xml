@@ -32,6 +32,14 @@
             <artifactId>data-dao-jpa</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.grum</groupId>
+            <artifactId>geocalc</artifactId>
+            <version>0.5.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

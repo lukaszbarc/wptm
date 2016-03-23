@@ -5,39 +5,30 @@ import org.springframework.stereotype.Service;
 import pl.ptm.client.api.VehiclePositionData;
 import pl.ptm.client.service.api.VehicleCurrentPositionService;
 import pl.ptm.client.service.impl.exception.VehicleNotFoundException;
-import pl.ptm.data.dao.jpa.DataDaoJpa;
-import pl.ptm.data.dao.jpa.DataItemDaoJpa;
-import pl.ptm.data.model.DataItemEntity;
+import pl.ptm.data.dao.jpa.VehicleCurrentPositionDaoJpa;
+import pl.ptm.data.model.VehicleCurrentPositionEntity;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import static pl.ptm.client.api.VehiclePositionDataBuilder.aVehiclePositionData;
 
 
 @Service
 public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPositionService {
 
     @Autowired
-    private DataDaoJpa dataDao;
-
-    @Autowired
-    private DataItemDaoJpa dataItemDao;
+    private VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa;
 
     @Override
     public VehiclePositionData getVehiclePositionData(String providerId, String lineName, int brigadeNumber) {
-        DataItemEntity dataItem = dataItemDao
-                .findFirst1ByLineAndBrigadeOrderByDataSnapshotIdentityDesc(
-                        Integer.parseInt(lineName),
-                        brigadeNumber);
+        Optional<VehicleCurrentPositionEntity> positionOptional = vehicleCurrentPositionDaoJpa
+                .findByProviderIdAndLineNameAndBrigade(providerId, lineName, brigadeNumber);
 
-        if (dataItem != null) {
-            VehiclePositionData vehiclePositionData = new VehiclePositionData();
-            vehiclePositionData.setLat(dataItem.getLat());
-            vehiclePositionData.setLon(dataItem.getLon());
-            vehiclePositionData.setStatus(dataItem.getStatus());
-            vehiclePositionData.setShortName(lineName);
-            vehiclePositionData.setFullName(lineName + " brigade " + brigadeNumber);
-            vehiclePositionData.setDescription("");
-            return vehiclePositionData;
+        if (positionOptional.isPresent()) {
+            VehicleCurrentPositionEntity position = positionOptional.get();
+            return new Converter(providerId, position).invoke();
         } else {
             throw new VehicleNotFoundException();
         }
@@ -45,11 +36,43 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId, String lineName) {
-        return new ArrayList<>();
+        List<VehicleCurrentPositionEntity> positions = vehicleCurrentPositionDaoJpa
+                .findByProviderIdAndLineName(providerId, lineName);
+
+        return positions.stream().map(position -> new Converter(providerId, position).invoke()).collect(Collectors.toList());
     }
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId) {
-        return new ArrayList<>();
+
+        List<VehicleCurrentPositionEntity> positions = vehicleCurrentPositionDaoJpa
+                .findByProviderId(providerId);
+
+        return positions.stream().map(position -> new Converter(providerId, position).invoke()).collect(Collectors.toList());
+    }
+
+    private class Converter {
+        private String providerId;
+        private VehicleCurrentPositionEntity position;
+
+        public Converter(String providerId, VehicleCurrentPositionEntity position) {
+            this.providerId = providerId;
+            this.position = position;
+        }
+
+        public VehiclePositionData invoke() {
+            return aVehiclePositionData()
+                    .withProviderId(providerId)
+                    .withShortName(position.getLineName())
+                    .withFullName(position.getLineName() + "-" + position.getBrigade()
+                            + " v: " + position.getCalculatedSpeed() + " kph"
+                            + " course: " + position.getBearing())
+                    .withLat(position.getCurrentLat())
+                    .withLon(position.getCurrentLon())
+                    .withCalculatedSpeed(position.getCalculatedSpeed())
+                    .withBearing(position.getBearing())
+                    .build();
+        }
+
     }
 }
