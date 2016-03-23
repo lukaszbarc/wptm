@@ -2,7 +2,10 @@ package pl.ptm.data.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Data
@@ -18,9 +21,9 @@ public class DataItemEntity {
 
     private double lon;
 
-    private int line;
+    private String line;
 
-    private int firstLine;
+    private String firstLine;
 
     private int brigade;
 

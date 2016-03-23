@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import pl.ptm.client.api.VehiclePositionData;
 import pl.ptm.client.service.api.VehicleCurrentPositionService;
 import pl.ptm.client.service.impl.exception.VehicleNotFoundException;
-import pl.ptm.data.dao.jpa.DataDaoJpaImpl;
-import pl.ptm.data.dao.jpa.DataItemDaoJpaImpl;
+import pl.ptm.data.dao.jpa.DataDaoJpa;
+import pl.ptm.data.dao.jpa.DataItemDaoJpa;
 import pl.ptm.data.model.DataItemEntity;
 
 import java.util.List;
@@ -16,10 +16,10 @@ import java.util.List;
 public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPositionService {
 
     @Autowired
-    private DataDaoJpaImpl dataDao;
+    private DataDaoJpa dataDao;
 
     @Autowired
-    private DataItemDaoJpaImpl dataItemDao;
+    private DataItemDaoJpa dataItemDao;
 
     @Override
     public VehiclePositionData getVehiclePositionData(String providerId, String lineName, int brigadeNumber) {
@@ -28,7 +28,7 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
                         Integer.parseInt(lineName),
                         brigadeNumber);
 
-        if(dataItem != null) {
+        if (dataItem != null) {
             VehiclePositionData vehiclePositionData = new VehiclePositionData();
             vehiclePositionData.setLat(dataItem.getLat());
             vehiclePositionData.setLon(dataItem.getLon());

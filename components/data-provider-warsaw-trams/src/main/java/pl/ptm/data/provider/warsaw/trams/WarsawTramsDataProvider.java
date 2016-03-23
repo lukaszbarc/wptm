@@ -54,4 +54,9 @@ public class WarsawTramsDataProvider implements DataProvider {
                         .build()).collect(Collectors.toList()))
                 .build();
     }
+
+    @Override
+    public String name() {
+        return providerId;
+    }
 }

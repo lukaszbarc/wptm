@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pl.ptm.data.dao.jpa.DataDaoJpaImpl;
-import pl.ptm.data.dao.jpa.DataItemDaoJpaImpl;
+import pl.ptm.data.dao.jpa.DataDaoJpa;
+import pl.ptm.data.dao.jpa.DataItemDaoJpa;
 import pl.ptm.data.model.DataItemEntity;
 
 import java.util.ArrayList;
@@ -27,10 +27,10 @@ import java.util.stream.Collectors;
 public class DataStoreApplication {
 
     @Autowired
-    private DataItemDaoJpaImpl dataItemDaoJpa;
+    private DataItemDaoJpa dataItemDaoJpa;
 
     @Autowired
-    private DataDaoJpaImpl dataDaoJpa;
+    private DataDaoJpa dataDaoJpa;
 
     public static void main(String[] args) {
         SpringApplication.run(DataStoreApplication.class, args);
@@ -41,7 +41,7 @@ public class DataStoreApplication {
                                  @RequestParam("brigade") int brigade) {
         return dataItemDaoJpa.findByLineAndBrigade(line, brigade).stream().map(dataItemEntity -> {
             Point point = new Point();
-            point.setLine(dataItemEntity.getLine());
+            point.setLine(Integer.parseInt(dataItemEntity.getLine()));
             point.setLng(dataItemEntity.getLon());
             point.setLat(dataItemEntity.getLat());
             return point;
@@ -55,7 +55,7 @@ public class DataStoreApplication {
         for (DataItemEntity dataItemEntity : dataItemDaoJpa.findByDataSnapshotIdentity(
                 maxId)) {
             Point point = new Point();
-            point.setLine(dataItemEntity.getLine());
+            point.setLine(Integer.parseInt(dataItemEntity.getLine()));
             point.setLng(dataItemEntity.getLon());
             point.setLat(dataItemEntity.getLat());
             list.add(point);

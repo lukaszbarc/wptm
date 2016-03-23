@@ -26,6 +26,8 @@
         <module>data-provider-api</module>
         <module>data-provider-warsaw-trams</module>
         <module>data-provider-stops</module>
+        <module>data-service-api</module>
+        <module>data-service-impl</module>
     </modules>
 
 </project>

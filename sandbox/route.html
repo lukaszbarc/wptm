@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
         }
+
         #map {
             height: 100%;
         }
@@ -34,8 +35,8 @@
 
 
         var flightPlanCoordinates = [];
-        $.getJSON( "http://localhost:8080/route?line=24&brigade=11")
-                .done(function( data ) {
+        $.getJSON("http://localhost:8080/route?line=17&brigade=1")
+                .done(function (data) {
                     flightPlanCoordinates = data;
                     var flightPath = new google.maps.Polyline({
                         path: flightPlanCoordinates,

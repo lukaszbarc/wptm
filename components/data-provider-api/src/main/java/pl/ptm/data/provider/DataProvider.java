@@ -6,4 +6,6 @@ import pl.ptm.data.provider.dto.DataSnapshotDTO;
 public interface DataProvider {
 
     DataSnapshotDTO fetchData();
+
+    String name();
 }
