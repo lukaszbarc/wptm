@@ -22,6 +22,7 @@
 <script>
 
     var markers = [];
+    var lines = [];
 
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -32,6 +33,7 @@
         var setMapOnAll = function (map) {
             for (var i = 0; i < markers.length; i++) {
                 markers[i].setMap(map);
+                lines[i].setMap(map);
             }
         }
 
@@ -46,7 +48,12 @@
         var deleteMarkers = function () {
             clearMarkers();
             markers = [];
+            lines = [];
         }
+
+        var lineSymbol = {
+            path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
+        };
 
         var setMarkers = function (map) {
             // Adds markers to the map.
@@ -61,13 +68,26 @@
                                 label: resp.shortName.toString(),
                                 title: resp.fullName.toString()
                             });
+                            var line = new google.maps.Polyline({
+                                path: [{lat: resp.lat, lng: resp.lon}, {lat: resp.nextLat, lng: resp.nextLon}],
+                                geodesic: true,
+                                icons: [{
+                                    icon: lineSymbol,
+                                    offset: '100%'
+                                }],
+                                strokeColor: '#FF0000',
+                                strokeOpacity: 1.0,
+                                strokeWeight: 2
+                            });
+
+                            lines.push(line);
                             markers.push(marker);
                             showMarkers();
                         }
                     });
 
         }
-        setInterval(setMarkers, 10000);
+        setInterval(setMarkers, 5000);
         setMarkers(map);
     }
 

@@ -8,6 +8,8 @@ public class VehiclePositionData {
 
     private double lat;
     private double lon;
+    private double nextLat;
+    private double nextLon;
     private double calculatedSpeed;
     private double bearing;
     private String providerId;

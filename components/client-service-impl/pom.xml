@@ -31,6 +31,11 @@
             <artifactId>client-service-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.grum</groupId>
+            <artifactId>geocalc</artifactId>
+            <version>0.5.1</version>
+        </dependency>
     </dependencies>
 
 </project>

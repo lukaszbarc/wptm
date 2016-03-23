@@ -1,9 +1,10 @@
 package pl.ptm.client.api;
 
-
 public class VehiclePositionDataBuilder {
     private double lat;
     private double lon;
+    private double nextLat;
+    private double nextLon;
     private double calculatedSpeed;
     private double bearing;
     private String providerId;
@@ -26,6 +27,16 @@ public class VehiclePositionDataBuilder {
 
     public VehiclePositionDataBuilder withLon(double lon) {
         this.lon = lon;
+        return this;
+    }
+
+    public VehiclePositionDataBuilder withNextLat(double nextLat) {
+        this.nextLat = nextLat;
+        return this;
+    }
+
+    public VehiclePositionDataBuilder withNextLon(double nextLon) {
+        this.nextLon = nextLon;
         return this;
     }
 
@@ -65,22 +76,15 @@ public class VehiclePositionDataBuilder {
     }
 
     public VehiclePositionDataBuilder but() {
-        return aVehiclePositionData()
-                .withLat(lat)
-                .withLon(lon)
-                .withCalculatedSpeed(calculatedSpeed)
-                .withBearing(bearing)
-                .withProviderId(providerId)
-                .withShortName(shortName
-                ).withFullName(fullName)
-                .withDescription(description)
-                .withStatus(status);
+        return aVehiclePositionData().withLat(lat).withLon(lon).withNextLat(nextLat).withNextLon(nextLon).withCalculatedSpeed(calculatedSpeed).withBearing(bearing).withProviderId(providerId).withShortName(shortName).withFullName(fullName).withDescription(description).withStatus(status);
     }
 
     public VehiclePositionData build() {
         VehiclePositionData vehiclePositionData = new VehiclePositionData();
         vehiclePositionData.setLat(lat);
         vehiclePositionData.setLon(lon);
+        vehiclePositionData.setNextLat(nextLat);
+        vehiclePositionData.setNextLon(nextLon);
         vehiclePositionData.setCalculatedSpeed(calculatedSpeed);
         vehiclePositionData.setBearing(bearing);
         vehiclePositionData.setProviderId(providerId);
