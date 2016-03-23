@@ -31,6 +31,7 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
 
     @Override
     public VehiclePositionData getVehiclePositionData(String providerId, String lineName, int brigadeNumber) {
+        LOGGER.debug("getVehiclePositionData {} {} {}", providerId, lineName, brigadeNumber);
         Optional<VehicleCurrentPositionEntity> positionOptional = vehicleCurrentPositionDaoJpa
                 .findByProviderIdAndLineNameAndBrigade(providerId, lineName, brigadeNumber);
 
@@ -44,6 +45,7 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId, String lineName) {
+        LOGGER.debug("getVehiclePositionData {} {}", providerId, lineName);
         List<VehicleCurrentPositionEntity> positions = vehicleCurrentPositionDaoJpa
                 .findByProviderIdAndLineName(providerId, lineName);
 
@@ -52,7 +54,7 @@ public class VehicleCurrentPositionServiceImpl implements VehicleCurrentPosition
 
     @Override
     public List<VehiclePositionData> getVehiclePositionData(String providerId) {
-
+        LOGGER.debug("getVehiclePositionData {}", providerId);
         List<VehicleCurrentPositionEntity> positions = vehicleCurrentPositionDaoJpa
                 .findByProviderId(providerId);
 
