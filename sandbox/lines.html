@@ -57,7 +57,7 @@
 
         var setMarkers = function (map) {
             // Adds markers to the map.
-            $.getJSON("http://localhost:8080/warsaw-trams/position/current")
+            $.getJSON("http://localhost:8080/warsaw-trams-mock/position/current")
                     .done(function (data) {
                         deleteMarkers();
                         for (var i = 0; i < data.length; i++) {

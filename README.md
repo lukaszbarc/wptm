@@ -13,6 +13,7 @@ Run mocked Warsaw Trams Api to work offline
 Server starts on localhsot:8099 and exposes two resources:
 
 > http://localhost:8099/trams
+
 > http://localhost:8099/withPossibleEmptyResult?emptyResultEveryN=50
 
 Run data store app connected to mocked api

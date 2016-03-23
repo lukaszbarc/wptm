@@ -11,6 +11,9 @@ public class SpeedCalculationServiceImpl implements SpeedCalculationService {
 
     @Override
     public double calculateSpeedInKph(double distanceInMeters, double deltaTimeInSeconds) {
+        if (deltaTimeInSeconds == 0.0) {
+            return 0.0;
+        }
         LOGGER.trace("Calculate speed for {} meters in {} seconds", distanceInMeters, deltaTimeInSeconds);
 
         double result = (distanceInMeters * (3600.0 / deltaTimeInSeconds)) / 1000.0;
