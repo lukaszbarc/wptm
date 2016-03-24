@@ -17,7 +17,8 @@ public class VehicleDataDownloaderServiceImpl implements VehicleDataDownloaderSe
 
     private VehicleDataEventPublisher eventPublisher;
 
-    public VehicleDataDownloaderServiceImpl(List<DataProvider> dataProviders, VehicleDataEventPublisher eventPublisher) {
+    public VehicleDataDownloaderServiceImpl(final List<DataProvider> dataProviders,
+                                            final VehicleDataEventPublisher eventPublisher) {
         this.dataProviders = dataProviders;
         this.eventPublisher = eventPublisher;
     }

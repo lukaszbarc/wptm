@@ -21,6 +21,8 @@
         <module>client-resource</module>
         <module>client-service-api</module>
         <module>client-service-impl</module>
+        <module>common-service-api</module>
+        <module>common-service-impl</module>
         <module>data-model</module>
         <module>data-dao-jpa</module>
         <module>data-provider-api</module>

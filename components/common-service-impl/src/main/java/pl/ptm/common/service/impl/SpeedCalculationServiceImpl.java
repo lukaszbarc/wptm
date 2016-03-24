@@ -1,8 +1,8 @@
-package pl.ptm.data.service.impl;
+package pl.ptm.common.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.ptm.data.service.SpeedCalculationService;
+import pl.ptm.common.service.api.SpeedCalculationService;
 
 
 public class SpeedCalculationServiceImpl implements SpeedCalculationService {

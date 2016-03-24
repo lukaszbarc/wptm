@@ -1,4 +1,4 @@
-package pl.ptm.data.service.impl;
+package pl.ptm.common.service.impl;
 
 import com.grum.geocalc.Coordinate;
 import com.grum.geocalc.DegreeCoordinate;
@@ -6,7 +6,7 @@ import com.grum.geocalc.EarthCalc;
 import com.grum.geocalc.Point;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pl.ptm.data.service.DistanceCalculationService;
+import pl.ptm.common.service.api.DistanceCalculationService;
 
 public class DistanceCalculationServiceImpl implements DistanceCalculationService {
 

@@ -55,9 +55,46 @@
             path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW
         };
 
+
+        google.maps.event.addListener(map, "click", function (event) {
+            var lat = event.latLng.lat();
+            var lng = event.latLng.lng();
+            // populate yor box/field with lat, lng
+            console.log("Lat=" + lat + "; Lng=" + lng);
+
+            $.getJSON("http://localhost:8080/warsaw-trams/position/current/near?latitude=" + lat + "&longitude=" + lng + "&maxDistance=1500")
+                    .done(function (data) {
+                        deleteMarkers();
+                        for (var i = 0; i < data.length; i++) {
+                            var resp = data[i].vehiclePositionData;
+                            var marker = new google.maps.Marker({
+                                position: {lat: resp.lat, lng: resp.lon},
+                                map: map,
+                                label: resp.shortName.toString(),
+                                title: resp.fullName.toString()
+                            });
+                            var line = new google.maps.Polyline({
+                                path: [{lat: resp.lat, lng: resp.lon}, {lat: resp.nextLat, lng: resp.nextLon}],
+                                geodesic: true,
+                                icons: [{
+                                    icon: lineSymbol,
+                                    offset: '100%'
+                                }],
+                                strokeColor: '#FF0000',
+                                strokeOpacity: 1.0,
+                                strokeWeight: 2
+                            });
+
+                            lines.push(line);
+                            markers.push(marker);
+                            showMarkers();
+                        }
+                    });
+        });
+
         var setMarkers = function (map) {
             // Adds markers to the map.
-            $.getJSON("http://localhost:8080/warsaw-trams-mock/position/current")
+            $.getJSON("http://localhost:8080/warsaw-trams/position/current")
                     .done(function (data) {
                         deleteMarkers();
                         for (var i = 0; i < data.length; i++) {
@@ -87,7 +124,7 @@
                     });
 
         }
-        setInterval(setMarkers, 5000);
+        setInterval(setMarkers, 15000);
         setMarkers(map);
     }
 

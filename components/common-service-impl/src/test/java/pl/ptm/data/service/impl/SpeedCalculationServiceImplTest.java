@@ -3,7 +3,8 @@ package pl.ptm.data.service.impl;
 
 import org.junit.Before;
 import org.junit.Test;
-import pl.ptm.data.service.SpeedCalculationService;
+import pl.ptm.common.service.api.SpeedCalculationService;
+import pl.ptm.common.service.impl.SpeedCalculationServiceImpl;
 
 import static org.fest.assertions.Assertions.assertThat;
 

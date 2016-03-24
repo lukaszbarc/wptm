@@ -28,6 +28,11 @@
             <groupId>com.grum</groupId>
             <artifactId>geocalc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- Project dependencies -->
         <dependency>
@@ -38,6 +43,11 @@
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>client-service-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.ptm</groupId>
+            <artifactId>common-service-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

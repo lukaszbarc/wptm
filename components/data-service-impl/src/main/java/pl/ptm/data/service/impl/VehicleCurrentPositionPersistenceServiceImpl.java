@@ -3,13 +3,13 @@ package pl.ptm.data.service.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
+import pl.ptm.common.service.api.BearingCalculationService;
+import pl.ptm.common.service.api.DistanceCalculationService;
+import pl.ptm.common.service.api.SpeedCalculationService;
 import pl.ptm.data.dao.jpa.VehicleCurrentPositionDaoJpa;
 import pl.ptm.data.model.VehicleCurrentPositionEntity;
 import pl.ptm.data.provider.dto.DataItemDTO;
 import pl.ptm.data.provider.dto.DataSnapshotDTO;
-import pl.ptm.data.service.BearingCalculationService;
-import pl.ptm.data.service.DistanceCalculationService;
-import pl.ptm.data.service.SpeedCalculationService;
 import pl.ptm.data.service.VehicleCurrentPositionPersistenceService;
 import pl.ptm.data.service.events.NewDataSnapshotEvent;
 
@@ -22,16 +22,14 @@ public class VehicleCurrentPositionPersistenceServiceImpl implements VehicleCurr
     private static final Logger LOGGER = LoggerFactory.getLogger(VehicleCurrentPositionPersistenceServiceImpl.class);
 
     private VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa;
-
     private DistanceCalculationService distanceCalculationService;
-
     private SpeedCalculationService speedCalculationService;
     private BearingCalculationService bearingCalculationService;
 
-    public VehicleCurrentPositionPersistenceServiceImpl(VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa,
-                                                        DistanceCalculationService distanceCalculationService,
-                                                        SpeedCalculationService speedCalculationService,
-                                                        BearingCalculationService bearingCalculationService) {
+    public VehicleCurrentPositionPersistenceServiceImpl(final VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa,
+                                                        final DistanceCalculationService distanceCalculationService,
+                                                        final SpeedCalculationService speedCalculationService,
+                                                        final BearingCalculationService bearingCalculationService) {
         this.vehicleCurrentPositionDaoJpa = vehicleCurrentPositionDaoJpa;
         this.distanceCalculationService = distanceCalculationService;
         this.speedCalculationService = speedCalculationService;
