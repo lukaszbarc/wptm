@@ -1,4 +1,4 @@
-Public Transport Monitor
+Public Transport Monitor [![Build Status](https://travis-ci.org/lukaszbarc/wptm.svg?branch=master)](https://travis-ci.org/lukaszbarc/wptm)
 ========================
 
 Build
