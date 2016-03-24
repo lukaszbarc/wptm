@@ -78,10 +78,14 @@ public class VehicleCurrentPositionPersistenceServiceImpl implements VehicleCurr
             double speed = speedCalculationService.calculateSpeedInKph(distance, deltaTime);
             currentEntity.setCalculatedSpeed(speed);
 
-            double bearing = bearingCalculationService.calculateBearing(currentEntity.getLastLon(),
-                    currentEntity.getLastLat(), currentEntity.getCurrentLon(), currentEntity.getCurrentLat());
+            double bearing = currentEntity.getBearing();
+            if (speed > 0) {
+                bearing = bearingCalculationService.calculateBearing(currentEntity.getLastLon(),
+                        currentEntity.getLastLat(),
+                        currentEntity.getCurrentLon(),
+                        currentEntity.getCurrentLat());
+            }
             currentEntity.setBearing(bearing);
-
         }
     }
 
