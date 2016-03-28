@@ -7,6 +7,8 @@ import pl.ptm.data.provider.dto.DataSnapshotDTO;
  */
 public class StopsDataProvider implements DataProvider {
 
+    private static final String GOOGLE_KEY = "AIzaSyBTtFaE3jJxgFEBFhg10X9a45Xhb6CxsUA";
+
     @Override
     public DataSnapshotDTO fetchData() {
         return null;
