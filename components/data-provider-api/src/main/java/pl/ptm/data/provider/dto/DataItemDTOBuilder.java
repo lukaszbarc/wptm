@@ -6,8 +6,8 @@ import java.util.Date;
 public class DataItemDTOBuilder {
     private double lat;
     private double lon;
-    private int line;
-    private int firstLine;
+    private String line;
+    private String firstLine;
     private int brigade;
     private String status;
     private Date date;
@@ -30,12 +30,12 @@ public class DataItemDTOBuilder {
         return this;
     }
 
-    public DataItemDTOBuilder withLine(int line) {
+    public DataItemDTOBuilder withLine(String line) {
         this.line = line;
         return this;
     }
 
-    public DataItemDTOBuilder withFirstLine(int firstLine) {
+    public DataItemDTOBuilder withFirstLine(String firstLine) {
         this.firstLine = firstLine;
         return this;
     }

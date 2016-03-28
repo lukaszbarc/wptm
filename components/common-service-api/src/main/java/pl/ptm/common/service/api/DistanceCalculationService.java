@@ -1,4 +1,4 @@
-package pl.ptm.data.service;
+package pl.ptm.common.service.api;
 
 
 public interface DistanceCalculationService {

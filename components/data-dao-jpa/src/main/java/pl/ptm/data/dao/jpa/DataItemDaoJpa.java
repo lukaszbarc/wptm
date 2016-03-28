@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface DataItemDaoJpa extends CrudRepository<DataItemEntity, Long> {
 
-    List<DataItemEntity> findByLineAndBrigade(int line, int brigade);
+    List<DataItemEntity> findByLineAndBrigade(String line, int brigade);
 
     List<DataItemEntity> findByDataSnapshotIdentity(long identity);
 
-    DataItemEntity findFirst1ByLineAndBrigadeOrderByDataSnapshotIdentityDesc(int line, int brigade);
+    DataItemEntity findFirst1ByLineAndBrigadeOrderByDataSnapshotIdentityDesc(String line, int brigade);
 }

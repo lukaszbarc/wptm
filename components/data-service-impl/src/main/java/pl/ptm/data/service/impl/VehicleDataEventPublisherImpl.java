@@ -14,7 +14,7 @@ public class VehicleDataEventPublisherImpl implements VehicleDataEventPublisher 
 
     private ApplicationEventPublisher applicationEventPublisher;
 
-    public VehicleDataEventPublisherImpl(ApplicationEventPublisher applicationEventPublisher) {
+    public VehicleDataEventPublisherImpl(final ApplicationEventPublisher applicationEventPublisher) {
         this.applicationEventPublisher = applicationEventPublisher;
     }
 

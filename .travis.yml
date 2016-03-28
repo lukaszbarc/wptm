@@ -1,0 +1,5 @@
+language: java
+jdk:
+  - oraclejdk8
+notifications:
+  slack: brajanmatisebaco:N19ejizUHZ2V9m050ZSQYLgd

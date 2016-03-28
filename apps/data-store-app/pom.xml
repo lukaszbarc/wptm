@@ -65,6 +65,11 @@
             <artifactId>data-model</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>pl.ptm</groupId>
+            <artifactId>common-service-impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>

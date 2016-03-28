@@ -3,13 +3,13 @@ package pl.ptm.data.service.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
+import pl.ptm.common.service.api.BearingCalculationService;
+import pl.ptm.common.service.api.DistanceCalculationService;
+import pl.ptm.common.service.api.SpeedCalculationService;
 import pl.ptm.data.dao.jpa.VehicleCurrentPositionDaoJpa;
 import pl.ptm.data.model.VehicleCurrentPositionEntity;
 import pl.ptm.data.provider.dto.DataItemDTO;
 import pl.ptm.data.provider.dto.DataSnapshotDTO;
-import pl.ptm.data.service.BearingCalculationService;
-import pl.ptm.data.service.DistanceCalculationService;
-import pl.ptm.data.service.SpeedCalculationService;
 import pl.ptm.data.service.VehicleCurrentPositionPersistenceService;
 import pl.ptm.data.service.events.NewDataSnapshotEvent;
 
@@ -22,16 +22,14 @@ public class VehicleCurrentPositionPersistenceServiceImpl implements VehicleCurr
     private static final Logger LOGGER = LoggerFactory.getLogger(VehicleCurrentPositionPersistenceServiceImpl.class);
 
     private VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa;
-
     private DistanceCalculationService distanceCalculationService;
-
     private SpeedCalculationService speedCalculationService;
     private BearingCalculationService bearingCalculationService;
 
-    public VehicleCurrentPositionPersistenceServiceImpl(VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa,
-                                                        DistanceCalculationService distanceCalculationService,
-                                                        SpeedCalculationService speedCalculationService,
-                                                        BearingCalculationService bearingCalculationService) {
+    public VehicleCurrentPositionPersistenceServiceImpl(final VehicleCurrentPositionDaoJpa vehicleCurrentPositionDaoJpa,
+                                                        final DistanceCalculationService distanceCalculationService,
+                                                        final SpeedCalculationService speedCalculationService,
+                                                        final BearingCalculationService bearingCalculationService) {
         this.vehicleCurrentPositionDaoJpa = vehicleCurrentPositionDaoJpa;
         this.distanceCalculationService = distanceCalculationService;
         this.speedCalculationService = speedCalculationService;
@@ -44,7 +42,7 @@ public class VehicleCurrentPositionPersistenceServiceImpl implements VehicleCurr
             Optional<VehicleCurrentPositionEntity> vehicleCurrentPositionEntityOpt = vehicleCurrentPositionDaoJpa
                     .findByProviderIdAndLineNameAndBrigade(
                             dataSnapshotDTO.getProviderId(),
-                            String.valueOf(dataItemDTO.getLine()),
+                            dataItemDTO.getLine(),
                             dataItemDTO.getBrigade()
                     );
             VehicleCurrentPositionEntity currentEntity;
@@ -52,39 +50,59 @@ public class VehicleCurrentPositionPersistenceServiceImpl implements VehicleCurr
             if (vehicleCurrentPositionEntityOpt.isPresent()) {
                 LOGGER.trace("Found last position for {} line {} brigade {}", dataSnapshotDTO.getProviderId(),
                         dataItemDTO.getLine(), dataItemDTO.getBrigade());
-                currentEntity = vehicleCurrentPositionEntityOpt.get();
-                currentEntity.setLastLat(currentEntity.getCurrentLat());
-                currentEntity.setLastLon(currentEntity.getCurrentLon());
-                currentEntity.setLastPositionDate(currentEntity.getCurrentPositionDate());
+                currentEntity = updateProperties(vehicleCurrentPositionEntityOpt);
                 calculateSpeed = true;
             } else {
                 LOGGER.debug("Last position for {} line {} brigade {} not found, create new one",
                         dataSnapshotDTO.getProviderId(),
                         dataItemDTO.getLine(), dataItemDTO.getBrigade());
-                currentEntity = new VehicleCurrentPositionEntity();
-                currentEntity.setProviderId(dataSnapshotDTO.getProviderId());
-                currentEntity.setLineName(String.valueOf(dataItemDTO.getLine()));
-                currentEntity.setBrigade(dataItemDTO.getBrigade());
+                currentEntity = initializeProperties(dataSnapshotDTO, dataItemDTO);
             }
-            currentEntity.setCurrentLat(dataItemDTO.getLat());
-            currentEntity.setCurrentLon(dataItemDTO.getLon());
-            currentEntity.setCurrentPositionDate(dataItemDTO.getDate());
-
-            if (calculateSpeed) {
-                double distance = distanceCalculationService.calculateDistanceInMeters(currentEntity.getLastLon(),
-                        currentEntity.getLastLat(), currentEntity.getCurrentLon(), currentEntity.getCurrentLat());
-                double deltaTime = (currentEntity.getCurrentPositionDate().getTime() - currentEntity.getLastPositionDate().getTime()) / 1000.0;
-                double speed = speedCalculationService.calculateSpeedInKph(distance, deltaTime);
-                currentEntity.setCalculatedSpeed(speed);
-
-                double bearing = bearingCalculationService.calculateBearing(currentEntity.getLastLon(),
-                        currentEntity.getLastLat(), currentEntity.getCurrentLon(), currentEntity.getCurrentLat());
-                currentEntity.setBearing(bearing);
-
-            }
+            updateCommonProperties(dataItemDTO, currentEntity, calculateSpeed);
             vehicleCurrentPositionDaoJpa.save(currentEntity);
         }
         return 0;
+    }
+
+    private void updateCommonProperties(DataItemDTO dataItemDTO, VehicleCurrentPositionEntity currentEntity, boolean calculateSpeed) {
+        currentEntity.setCurrentLat(dataItemDTO.getLat());
+        currentEntity.setCurrentLon(dataItemDTO.getLon());
+        currentEntity.setCurrentPositionDate(dataItemDTO.getDate());
+
+        if (calculateSpeed) {
+            double distance = distanceCalculationService.calculateDistanceInMeters(currentEntity.getLastLon(),
+                    currentEntity.getLastLat(), currentEntity.getCurrentLon(), currentEntity.getCurrentLat());
+            double deltaTime = (currentEntity.getCurrentPositionDate().getTime() - currentEntity.getLastPositionDate().getTime()) / 1000.0;
+            double speed = speedCalculationService.calculateSpeedInKph(distance, deltaTime);
+            currentEntity.setCalculatedSpeed(speed);
+
+            double bearing = currentEntity.getBearing();
+            if (speed > 0) {
+                bearing = bearingCalculationService.calculateBearing(currentEntity.getLastLon(),
+                        currentEntity.getLastLat(),
+                        currentEntity.getCurrentLon(),
+                        currentEntity.getCurrentLat());
+            }
+            currentEntity.setBearing(bearing);
+        }
+    }
+
+    private VehicleCurrentPositionEntity initializeProperties(DataSnapshotDTO dataSnapshotDTO, DataItemDTO dataItemDTO) {
+        VehicleCurrentPositionEntity currentEntity;
+        currentEntity = new VehicleCurrentPositionEntity();
+        currentEntity.setProviderId(dataSnapshotDTO.getProviderId());
+        currentEntity.setLineName(String.valueOf(dataItemDTO.getLine()));
+        currentEntity.setBrigade(dataItemDTO.getBrigade());
+        return currentEntity;
+    }
+
+    private VehicleCurrentPositionEntity updateProperties(Optional<VehicleCurrentPositionEntity> vehicleCurrentPositionEntityOpt) {
+        VehicleCurrentPositionEntity currentEntity;
+        currentEntity = vehicleCurrentPositionEntityOpt.get();
+        currentEntity.setLastLat(currentEntity.getCurrentLat());
+        currentEntity.setLastLon(currentEntity.getCurrentLon());
+        currentEntity.setLastPositionDate(currentEntity.getCurrentPositionDate());
+        return currentEntity;
     }
 
 

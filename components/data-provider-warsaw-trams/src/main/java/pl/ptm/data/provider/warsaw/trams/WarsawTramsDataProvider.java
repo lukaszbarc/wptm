@@ -49,8 +49,8 @@ public class WarsawTramsDataProvider implements DataProvider {
                         .withLat(warsawTramDataItemDTO.getLat())
                         .withLon(warsawTramDataItemDTO.getLon())
                         .withDate(warsawTramDataItemDTO.getTime())
-                        .withLine(Integer.valueOf(warsawTramDataItemDTO.getFirstLine().trim()))
-                        .withFirstLine(Integer.valueOf(warsawTramDataItemDTO.getFirstLine().trim()))
+                        .withLine(warsawTramDataItemDTO.getFirstLine().trim())
+                        .withFirstLine(warsawTramDataItemDTO.getFirstLine().trim())
                         .withStatus(warsawTramDataItemDTO.getStatus())
                         .build()).collect(Collectors.toList()))
                 .build();

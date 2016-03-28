@@ -1,6 +1,5 @@
 package pl.ptm.client.resource;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,8 +13,11 @@ import java.util.List;
 @RequestMapping(value = "/{providerId}/position/current", produces = "application/json; charset=UTF-8")
 public class VehicleCurrentPositionResource {
 
-    @Autowired
     private VehicleCurrentPositionService vehicleCurrentPositionService;
+
+    public VehicleCurrentPositionResource(final VehicleCurrentPositionService vehicleCurrentPositionService) {
+        this.vehicleCurrentPositionService = vehicleCurrentPositionService;
+    }
 
     @RequestMapping(path = "", method = RequestMethod.GET)
     public List<VehiclePositionData> getVehiclePositionData(@PathVariable("providerId") String providerId) {

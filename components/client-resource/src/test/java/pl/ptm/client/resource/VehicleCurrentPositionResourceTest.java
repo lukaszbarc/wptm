@@ -36,7 +36,7 @@ public class VehicleCurrentPositionResourceTest {
 
     @Bean
     public VehicleCurrentPositionResource vehicleCurrentPositionResource() {
-        return new VehicleCurrentPositionResource();
+        return new VehicleCurrentPositionResource(vehicleCurrentPositionService());
     }
 
     @Bean

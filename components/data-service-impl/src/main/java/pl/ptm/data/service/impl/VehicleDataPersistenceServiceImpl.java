@@ -19,7 +19,7 @@ public class VehicleDataPersistenceServiceImpl implements VehicleDataPersistence
 
     private DataDaoJpa dataDaoJpa;
 
-    public VehicleDataPersistenceServiceImpl(DataDaoJpa dataDaoJpa) {
+    public VehicleDataPersistenceServiceImpl(final DataDaoJpa dataDaoJpa) {
         this.dataDaoJpa = dataDaoJpa;
     }
 
