@@ -11,4 +11,5 @@ public interface ParsingStrategy<E> {
 
     List<E> getData();
 
+    void doCleaning();
 }
