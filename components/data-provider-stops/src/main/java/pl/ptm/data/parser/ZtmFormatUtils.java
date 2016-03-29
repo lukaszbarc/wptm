@@ -64,7 +64,7 @@ public class ZtmFormatUtils {
         for (String number : split) {
             if(isTrumNumber(number)){
                 Long longNumber = Long.valueOf(
-                        number.replaceAll("/^", ""));
+                        number.replace("^", ""));
                 tramNumbers.add(longNumber);
             }
         }
