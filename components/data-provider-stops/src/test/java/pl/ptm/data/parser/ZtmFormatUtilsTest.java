@@ -50,7 +50,7 @@ public class ZtmFormatUtilsTest {
     }
 
     @Test
-    public void testParseTrumsNumbers() throws Exception {
+    public void testParseTramsNumbers() throws Exception {
         assertThat(ZtmFormatUtils.parseTramsNumbers(40, VEHICLES_LIST_LINE).size(), is(10));
     }
 }
