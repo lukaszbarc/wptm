@@ -21,7 +21,7 @@ public class ZtmFormatUtils {
     }
 
     public static boolean isSpaceAt(int i, String line){
-        return line.charAt(i) == ' ';
+        return i < line.length() && line.charAt(i) == ' ';
     }
 
     public static boolean isNotSpaceAt(int i, String line){
