@@ -14,7 +14,7 @@ public class ZtmParsingStrategy implements ParsingStrategy<VehicleStopEntity>{
     private static final Logger LOGGER = LoggerFactory.getLogger(ZtmParsingStrategy.class);
 
     private List<VehicleStopEntity> stops = new ArrayList<>();
-
+    private VehicleStopEntity stop;
     private String groupName;
     private String groupNumber;
 
@@ -27,16 +27,20 @@ public class ZtmParsingStrategy implements ParsingStrategy<VehicleStopEntity>{
         }
 
         if(ZtmFormatUtils.isStop(line)){
-
-            VehicleStopEntity stop = new VehicleStopEntity();
+            stop = new VehicleStopEntity();
             stop.setGroupNumber(groupNumber);
             stop.setGroupName(groupName);
             stop.setNumber(ZtmFormatUtils.parseStringAt(9,line));
             stop.setName(ZtmFormatUtils.parseStringAt(34, line));
             stop.setDest(ZtmFormatUtils.parseStringAt(75, line));
+            stop.setLon(ZtmFormatUtils.parseDoubleAt(112, line));
+            stop.setLat(ZtmFormatUtils.parseDoubleAt(129, line));
             stops.add(stop);
-
             LOGGER.debug("Stop added: " + stop);
+        }
+
+        if(ZtmFormatUtils.isVehiclesList(line)){
+            stop.setTrams(ZtmFormatUtils.parseTramsNumbers(40, line));
         }
     }
 
