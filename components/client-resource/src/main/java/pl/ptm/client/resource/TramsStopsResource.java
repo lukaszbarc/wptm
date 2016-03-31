@@ -1,6 +1,7 @@
 package pl.ptm.client.resource;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import pl.ptm.client.api.VehicleStopData;
 
@@ -14,7 +15,8 @@ import java.util.List;
 @RequestMapping(value = "/stops", produces = "application/json; charset=UTF-8")
 public class TramsStopsResource {
 
-    public List<VehicleStopData> retrieveStops(){
+    @RequestMapping
+    public @ResponseBody List<VehicleStopData> retrieveStops(){
         VehicleStopData vehicleStopData = new VehicleStopData();
         vehicleStopData.setLon(52.248678);
         vehicleStopData.setLat(21.044226);

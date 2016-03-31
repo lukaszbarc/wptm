@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import pl.ptm.client.api.VehicleDistanceData;
 import pl.ptm.client.api.VehiclePositionData;
+import pl.ptm.client.resource.TramsStopsResource;
 import pl.ptm.client.resource.VehicleCurrentDistanceResource;
 import pl.ptm.client.resource.VehicleCurrentPositionResource;
 import pl.ptm.client.service.api.Converter;
