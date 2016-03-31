@@ -6,6 +6,7 @@ import pl.ptm.data.enums.VehicleStopType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.util.Set;
 
 /**
@@ -35,6 +36,7 @@ public class VehicleStopEntity {
 
     private VehicleStopType type;
 
+    @Transient
     private Set<Long> trams;
 
     @Override
