@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import pl.ptm.client.api.VehicleDistanceData;
 import pl.ptm.client.api.VehiclePositionData;
-import pl.ptm.client.resource.TramsStopsResource;
 import pl.ptm.client.resource.VehicleCurrentDistanceResource;
 import pl.ptm.client.resource.VehicleCurrentPositionResource;
 import pl.ptm.client.service.api.Converter;
@@ -18,11 +17,17 @@ import pl.ptm.client.service.impl.VehicleCurrentPositionServiceImpl;
 import pl.ptm.common.service.api.DistanceCalculationService;
 import pl.ptm.data.dao.jpa.VehicleCurrentPositionDaoJpa;
 import pl.ptm.data.model.VehicleCurrentPositionEntity;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Comparator;
 
 
 @Configuration
+@EnableSwagger2
 @Import(CommonServicesConfiguration.class)
 public class ResourcesConfiguration {
 
@@ -60,6 +65,15 @@ public class ResourcesConfiguration {
     @Bean
     public Converter<VehicleCurrentPositionEntity, VehiclePositionData> converter() {
         return new VehicleCurrentPositionEntityToVehiclePositionDataConverter();
+    }
+
+    @Bean
+    public Docket api() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build();
     }
 
 

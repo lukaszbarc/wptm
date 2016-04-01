@@ -25,6 +25,7 @@
         <fest-assert.version>1.4</fest-assert.version>
         <rest-assured.version>2.9.0</rest-assured.version>
         <geocalc.version>0.5.1</geocalc.version>
+        <swagger.version>2.2.2</swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -60,6 +61,18 @@
                 <groupId>com.grum</groupId>
                 <artifactId>geocalc</artifactId>
                 <version>${geocalc.version}</version>
+            </dependency>
+
+            <!-- Documentation -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
 
 

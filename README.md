@@ -6,6 +6,13 @@ Build
 Simply:
 > mvn clean install
 
+API DOC:
+--------
+
+Run app and then go to:
+
+> http://localhost:8080/swagger-ui.html
+
 Run mocked Warsaw Trams Api to work offline
 -------------------------------------------
 > java -jar apps\mock-warsaw-trams-app\target\mock-warsaw-trams-app-0.0.1-SNAPSHOT.jar
