@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pl.ptm.common.service.api.SpeedCalculationService;
 
+import static java.lang.Double.doubleToRawLongBits;
+
 
 public class SpeedCalculationServiceImpl implements SpeedCalculationService {
 
@@ -11,7 +13,7 @@ public class SpeedCalculationServiceImpl implements SpeedCalculationService {
 
     @Override
     public double calculateSpeedInKph(double distanceInMeters, double deltaTimeInSeconds) {
-        if (deltaTimeInSeconds == 0.0) {
+        if (doubleToRawLongBits(deltaTimeInSeconds) == 0) {
             return 0.0;
         }
         LOGGER.trace("Calculate speed for {} meters in {} seconds", distanceInMeters, deltaTimeInSeconds);

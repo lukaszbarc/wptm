@@ -36,6 +36,7 @@ public class VehicleCurrentDistanceServiceImpl implements VehicleCurrentDistance
         this.vehicleDistanceDataComparator = vehicleDistanceDataComparator;
     }
 
+    @Override
     public List<VehicleDistanceData> getVehicleDistanceData(final GeoPointData geoPoint,
                                                             final String providerId,
                                                             final String lineName,
