@@ -97,8 +97,8 @@ public class EarthCalc {
         double φ1 = toRadians(standPoint.latitude);
         double φ2 = toRadians(forePoint.latitude);
 
-        double a = 6_378_137;
-        double b = 6_356_752.314245;
+        double a = 6378137;
+        double b = 6356752.314245;
         double f = 1 / 298.257223563;
 
         double L = λ2 - λ1;

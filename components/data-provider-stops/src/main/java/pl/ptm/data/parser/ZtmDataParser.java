@@ -1,5 +1,6 @@
 package pl.ptm.data.parser;
 
+import org.springframework.stereotype.Component;
 import pl.ptm.data.model.VehicleStopEntity;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.stream.Stream;
 /**
  * Created by jbogacz on 24.03.2016.
  */
+@Component
 public class ZtmDataParser implements DataParser<VehicleStopEntity> {
 
     private ParsingStrategy parsingStrategy;
