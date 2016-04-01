@@ -28,11 +28,15 @@ public class ZtmDataParser implements DataParser<VehicleStopEntity> {
             else if(line.contains("#ZP")){
                 break;
             }
-
             if(properBlock){
                 parsingStrategy.doParse(line);
             }
         }
-        return null;
+        removeStopsWithoutTrams();
+        return parsingStrategy.getData();
+    }
+
+    private void removeStopsWithoutTrams() {
+        parsingStrategy.doCleaning();
     }
 }
