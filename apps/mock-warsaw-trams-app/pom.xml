@@ -29,11 +29,6 @@
             <artifactId>data-provider-warsaw-trams</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>pl.ptm</groupId>
-            <artifactId>data-provider-stops</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
