@@ -1,10 +1,7 @@
 package pl.ptm.client.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.ptm.client.api.VehicleStopData;
 import pl.ptm.client.service.api.VehicleStopService;
 
@@ -22,8 +19,13 @@ public class VehicleStopResource {
     private VehicleStopService vehicleStopService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public @ResponseBody List<VehicleStopData> retrieveStops(){
+    public @ResponseBody List<VehicleStopData> getStops(){
         return vehicleStopService.getRegisteredVehicleStops();
     }
 
+    @RequestMapping(value = "/nearest", method = RequestMethod.GET)
+    public @ResponseBody VehicleStopData getNearest(@RequestParam Double lon,
+                                                    @RequestParam Double lat){
+        return vehicleStopService.getNearestVehicleStop(lon, lat);
+    }
 }

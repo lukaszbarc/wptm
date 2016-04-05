@@ -11,4 +11,5 @@ public interface VehicleStopService {
 
     List<VehicleStopData> getRegisteredVehicleStops();
 
+    VehicleStopData getNearestVehicleStop(Double lon, Double lat);
 }
