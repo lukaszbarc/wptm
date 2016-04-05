@@ -42,6 +42,11 @@
         </dependency>
         <dependency>
             <groupId>pl.ptm</groupId>
+            <artifactId>data-provider-stops</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.ptm</groupId>
             <artifactId>client-resource</artifactId>
             <version>${project.version}</version>
         </dependency>
