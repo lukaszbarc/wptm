@@ -1,32 +1,23 @@
 package pl.ptm.client.resource;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-import pl.ptm.app.data.store.DataStoreApplication;
-
 import static com.jayway.restassured.RestAssured.expect;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.core.Is.is;
 
 /**
  * Created by jbogacz on 2016-04-05.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = DataStoreApplication.class)
-@WebAppConfiguration
-@IntegrationTest
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(classes = DataStoreApplication.class)
+//@WebAppConfiguration
+//@IntegrationTest
 public class VehicleStopResourceTest {
 
-    @Test
+//    @Test
     public void testGetStops() throws Exception {
 
     }
 
-    @Test
+//    @Test
     public void testGetNearest() throws Exception {
         expect().
             statusCode(200).
