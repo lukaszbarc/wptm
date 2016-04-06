@@ -8,10 +8,10 @@ import pl.ptm.data.dao.jpa.VehicleStopDaoJpa;
 import pl.ptm.data.model.VehicleStopEntity;
 import pl.ptm.data.parser.DataParser;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -43,14 +43,28 @@ public class VehicleStopsService {
 
     private Stream<String> createTestStream() throws IOException, URISyntaxException {
         String resourceName = "RA160329.txt";
-        checkResourceExists(resourceName);
-        return Files.lines(Paths.get(ClassLoader.getSystemResource(resourceName).toURI()));
+
+        File file = createNewFile(resourceName);
+        extractFileFromJar(resourceName, file);
+        LOGGER.info("File extracted from jar to: " + file.getAbsolutePath());
+        return Files.lines(file.getAbsoluteFile().toPath());
     }
 
-    private void checkResourceExists(String resourceName) throws IOException {
-        if(ClassLoader.getSystemResource(resourceName) == null){
-            throw new IOException(resourceName + " resource doesn't exist");
+    private File createNewFile(String resourceName) {
+        File file = new File(resourceName);
+        if(file.exists()){
+            file.delete();
         }
+        return file;
+    }
+
+    private void extractFileFromJar(String resourceName, File file) throws IOException {
+        InputStream link = (getClass().getClassLoader().getResourceAsStream(resourceName));
+        Files.copy(link, file.getAbsoluteFile().toPath());
+    }
+
+    private URL getSystemResource(String resourceName) {
+        return getClass().getClassLoader().getSystemResource(resourceName);
     }
 
     private boolean checkIfDataToSync() {
