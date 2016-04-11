@@ -17,10 +17,8 @@ import pl.ptm.data.service.strategy.DataStrategy;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -50,13 +48,15 @@ public class VehicleStopsSynchronizationService {
     private ZtmSyncFileDaoJpa ztmSyncFileDao;
 
     public void synchronizeFtpData() throws URISyntaxException, IOException {
-//        parseClearSave("/tmp/downloaded/RA160329.txt");
-//        parseClearSave("/tmp/downloaded/RA160415.txt");
-
-        String filePath = downloadNewDataAndGetPath();
-        if(filePath != null) {
-            String extractedArchive = unZipArchive(filePath);
-            parseClearSave(extractedArchive);
+        if (false) {
+            String filePath = downloadNewDataAndGetPath();
+            if(filePath != null) {
+                String extractedArchive = unZipArchive(filePath);
+                parseClearSave(extractedArchive);
+            }
+        } else {
+            File extractedFile = extractFileFromJar("RA160415.txt");
+            parseClearSave(extractedFile.getPath());
         }
     }
 
@@ -85,5 +85,15 @@ public class VehicleStopsSynchronizationService {
         } else {
             return null;
         }
+    }
+
+    private File extractFileFromJar(String resourceName) throws IOException {
+        File file = new File(resourceName);
+        if(file.exists()){
+            file.delete();
+        }
+        InputStream link = (getClass().getClassLoader().getResourceAsStream(resourceName));
+        Files.copy(link, file.getAbsoluteFile().toPath());
+        return file;
     }
 }
