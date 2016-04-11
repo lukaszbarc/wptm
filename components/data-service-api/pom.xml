@@ -40,12 +40,33 @@
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>data-provider-stops</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.ptm</groupId>
+            <artifactId>common-service-impl</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>pl.ptm</groupId>
             <artifactId>data-dao-jpa</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
