@@ -45,6 +45,10 @@ public class VehicleStopServiceImpl implements VehicleStopService {
         VehicleStopData nearestVehicleStop = null;
 
         for (VehicleStopData stopData : getRegisteredVehicleStops()) {
+            if(stopData.getLon() == null || stopData.getLat() == null){
+                continue;
+            }
+
             Point fore = new Point(new DegreeCoordinate(stopData.getLon()), new DegreeCoordinate(stopData.getLat()));
 
             Double distance = EarthCalc.getDistance(stand, fore);
