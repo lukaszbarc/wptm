@@ -5,7 +5,10 @@ import org.slf4j.LoggerFactory;
 import pl.ptm.data.enums.VehicleStopType;
 import pl.ptm.data.model.VehicleStopEntity;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by jbogacz on 25.03.2016.
@@ -32,8 +35,8 @@ public class ZtmParsingStrategy implements ParsingStrategy<VehicleStopEntity>{
             stop.setNumber(ZtmFormatUtils.parseStringAt(9,line));
             stop.setName(ZtmFormatUtils.parseStringAt(34, line));
             stop.setDest(ZtmFormatUtils.parseStringAt(75, line));
-            stop.setLon(ZtmFormatUtils.parseDoubleAt(112, line));
-            stop.setLat(ZtmFormatUtils.parseDoubleAt(129, line));
+            stop.setLat(ZtmFormatUtils.parseDoubleAt(112, line));
+            stop.setLon(ZtmFormatUtils.parseDoubleAt(129, line));
             stop.setType(VehicleStopType.TRAM);
 
             addStopAndLogDetails();
