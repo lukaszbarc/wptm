@@ -9,6 +9,8 @@ import pl.ptm.client.api.VehicleStopData;
 import pl.ptm.client.service.api.CachedVehicleStopService;
 import pl.ptm.client.service.api.VehicleStopService;
 
+import java.text.DecimalFormat;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 /**
@@ -16,6 +18,8 @@ import java.util.List;
  */
 @Component
 public class VehicleStopServiceImpl implements VehicleStopService {
+
+    private static final double ROUND_DIGITS = 1000.0;
 
     @Autowired
     private CachedVehicleStopService cachedVehicleStopService;
@@ -27,24 +31,12 @@ public class VehicleStopServiceImpl implements VehicleStopService {
 
     @Override
     public VehicleStopData getNearestVehicleStop(Double lon, Double lat) {
-        Point stand = new Point(new DegreeCoordinate(lon), new DegreeCoordinate(lon));
+        return cachedVehicleStopService.getNearestVehicleStop(
+                round(lon),
+                round(lat));
+    }
 
-        Double smallestDist = null;
-        VehicleStopData nearestVehicleStop = null;
-
-        for (VehicleStopData stopData : getRegisteredVehicleStops()) {
-            if(stopData.getLon() == null || stopData.getLat() == null){
-                continue;
-            }
-
-            Point fore = new Point(new DegreeCoordinate(stopData.getLon()), new DegreeCoordinate(stopData.getLat()));
-
-            Double distance = EarthCalc.getDistance(stand, fore);
-            if(smallestDist == null || distance < smallestDist){
-                smallestDist = distance;
-                nearestVehicleStop = stopData;
-            }
-        }
-        return nearestVehicleStop;
+    private Double round(Double value){
+        return Math.round( value * ROUND_DIGITS ) / ROUND_DIGITS;
     }
 }

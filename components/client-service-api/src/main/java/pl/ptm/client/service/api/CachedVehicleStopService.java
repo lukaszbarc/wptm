@@ -10,4 +10,6 @@ import java.util.List;
 public interface CachedVehicleStopService {
 
     List<VehicleStopData> getRegisteredVehicleStops();
+
+    public VehicleStopData getNearestVehicleStop(Double lon, Double lat);
 }
