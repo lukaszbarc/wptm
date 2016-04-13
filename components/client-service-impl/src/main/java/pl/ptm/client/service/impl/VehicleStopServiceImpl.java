@@ -1,18 +1,14 @@
 package pl.ptm.client.service.impl;
 
-import com.grum.geocalc.Coordinate;
 import com.grum.geocalc.DegreeCoordinate;
 import com.grum.geocalc.EarthCalc;
 import com.grum.geocalc.Point;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import pl.ptm.client.api.VehicleStopData;
+import pl.ptm.client.service.api.CachedVehicleStopService;
 import pl.ptm.client.service.api.VehicleStopService;
-import pl.ptm.data.dao.jpa.VehicleStopDaoJpa;
-import pl.ptm.data.model.VehicleStopEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,19 +18,11 @@ import java.util.List;
 public class VehicleStopServiceImpl implements VehicleStopService {
 
     @Autowired
-    private VehicleStopDaoJpa dao;
-
-    @Autowired
-    private VehicleStopConverter converter;
+    private CachedVehicleStopService cachedVehicleStopService;
 
     @Override
-    @Cacheable("vehiclesStops")
     public List<VehicleStopData> getRegisteredVehicleStops() {
-        List<VehicleStopData> vehicleStopList = new ArrayList<>();
-        for (VehicleStopEntity entity : dao.findAll()) {
-            vehicleStopList.add(converter.toRight(entity));
-        }
-        return vehicleStopList;
+        return cachedVehicleStopService.getRegisteredVehicleStops();
     }
 
     @Override
