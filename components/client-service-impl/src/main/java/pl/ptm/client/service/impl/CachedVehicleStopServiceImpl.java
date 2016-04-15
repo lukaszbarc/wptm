@@ -25,7 +25,6 @@ public class CachedVehicleStopServiceImpl implements CachedVehicleStopService {
     private VehicleStopConverter converter;
 
     @Autowired
-    private DistanceCalculationService distanceCalculationService;
 
     @Cacheable("vehiclesStops")
     @Override
