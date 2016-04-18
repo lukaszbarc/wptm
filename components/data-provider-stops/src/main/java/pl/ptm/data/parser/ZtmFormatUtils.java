@@ -92,7 +92,12 @@ public class ZtmFormatUtils {
 
     public static boolean isTramNumber(String number){
         number = number.replace("^", "");
-        return isNumeric(number);
+        return isNumeric(number) && isInRange(number);
+    }
+
+    private static boolean isInRange(String number) {
+        Long numberLong = Long.valueOf(number);
+        return numberLong <= 41;
     }
 
     public static boolean isNumeric(String str)
