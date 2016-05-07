@@ -76,6 +76,12 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
+            <groupId>pl.ptm</groupId>
+            <artifactId>oauth2-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>

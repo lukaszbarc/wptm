@@ -30,6 +30,7 @@
         <module>data-provider-stops</module>
         <module>data-service-api</module>
         <module>data-service-impl</module>
+        <module>oauth2-client</module>
     </modules>
 
 </project>

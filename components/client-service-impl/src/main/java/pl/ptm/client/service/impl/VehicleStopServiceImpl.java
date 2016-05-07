@@ -1,18 +1,16 @@
 package pl.ptm.client.service.impl;
 
-import com.grum.geocalc.Coordinate;
 import com.grum.geocalc.DegreeCoordinate;
 import com.grum.geocalc.EarthCalc;
 import com.grum.geocalc.Point;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import pl.ptm.client.api.VehicleStopData;
+import pl.ptm.client.service.api.CachedVehicleStopService;
 import pl.ptm.client.service.api.VehicleStopService;
-import pl.ptm.data.dao.jpa.VehicleStopDaoJpa;
-import pl.ptm.data.model.VehicleStopEntity;
 
-import java.util.ArrayList;
+import java.text.DecimalFormat;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 /**
@@ -21,38 +19,24 @@ import java.util.List;
 @Component
 public class VehicleStopServiceImpl implements VehicleStopService {
 
-    @Autowired
-    private VehicleStopDaoJpa dao;
+    private static final double ROUND_DIGITS = 1000.0;
 
     @Autowired
-    private VehicleStopConverter converter;
+    private CachedVehicleStopService cachedVehicleStopService;
 
     @Override
-    @Cacheable("vehiclesStops")
     public List<VehicleStopData> getRegisteredVehicleStops() {
-        List<VehicleStopData> vehicleStopList = new ArrayList<>();
-        for (VehicleStopEntity entity : dao.findAll()) {
-            vehicleStopList.add(converter.toRight(entity));
-        }
-        return vehicleStopList;
+        return cachedVehicleStopService.getRegisteredVehicleStops();
     }
 
     @Override
     public VehicleStopData getNearestVehicleStop(Double lon, Double lat) {
-        Point stand = new Point(new DegreeCoordinate(lon), new DegreeCoordinate(lon));
+        return cachedVehicleStopService.getNearestVehicleStop(
+                round(lon),
+                round(lat));
+    }
 
-        Double smallestDist = null;
-        VehicleStopData nearestVehicleStop = null;
-
-        for (VehicleStopData stopData : getRegisteredVehicleStops()) {
-            Point fore = new Point(new DegreeCoordinate(stopData.getLon()), new DegreeCoordinate(stopData.getLat()));
-
-            Double distance = EarthCalc.getDistance(stand, fore);
-            if(smallestDist == null || distance < smallestDist){
-                smallestDist = distance;
-                nearestVehicleStop = stopData;
-            }
-        }
-        return nearestVehicleStop;
+    private Double round(Double value){
+        return Math.round( value * ROUND_DIGITS ) / ROUND_DIGITS;
     }
 }
