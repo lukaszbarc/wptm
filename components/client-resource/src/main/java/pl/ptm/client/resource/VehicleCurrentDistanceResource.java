@@ -1,10 +1,7 @@
 package pl.ptm.client.resource;
 
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.ptm.client.api.GeoPointDataBuilder;
 import pl.ptm.client.api.VehicleDistanceData;
 import pl.ptm.client.service.api.VehicleCurrentDistanceService;
@@ -21,7 +18,7 @@ public class VehicleCurrentDistanceResource {
         this.vehicleCurrentDistanceService = vehicleCurrentDistanceService;
     }
 
-    @RequestMapping("/{lineName}/near")
+    @RequestMapping(path = "/{lineName}/near", method = RequestMethod.GET)
     public List<VehicleDistanceData> getVehicleDistanceData(@PathVariable("providerId") final String providerId,
                                                             @PathVariable("lineName") String lineName,
                                                             @RequestParam("latitude") final double latitude,
@@ -34,7 +31,7 @@ public class VehicleCurrentDistanceResource {
                 .build(), providerId, lineName, maxDistance);
     }
 
-    @RequestMapping("/near")
+    @RequestMapping(path = "/near", method = RequestMethod.GET)
     public List<VehicleDistanceData> getVehicleDistanceData(@PathVariable("providerId") final String providerId,
                                                             @RequestParam("latitude") final double latitude,
                                                             @RequestParam("longitude") final double longitude,
