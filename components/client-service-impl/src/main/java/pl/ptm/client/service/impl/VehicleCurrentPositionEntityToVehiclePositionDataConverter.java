@@ -25,7 +25,7 @@ public class VehicleCurrentPositionEntityToVehiclePositionDataConverter implemen
 
         return aVehiclePositionData()
                 .withProviderId(position.getProviderId())
-                .withShortName(position.getLineName())
+                .withShortName(position.getLineName() + "-" + position.getBrigade())
                 .withFullName(position.getLineName() + "-" + position.getBrigade()
                         + " v: " + position.getCalculatedSpeed() + " kph"
                         + " course: " + position.getBearing())
